@@ -29,5 +29,13 @@ class Counter {
     render() {
         const counterNumber = this.target.querySelector('.counter_number');
         counterNumber.textContent = this.count;
+
+        if(this.count === 0){
+            counterNumber.style.color = '#fff';
+        }else if(this.count > 0){
+            counterNumber.style.color = '#b2e7d5';
+        }else if(this.count < 0){
+            counterNumber.style.color = '#c93232';
+        };
     }
 }

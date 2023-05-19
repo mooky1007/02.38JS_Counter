@@ -9,17 +9,29 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container container1">
         <h1 class="">Counter</h1>
         <p class="counter_number">0</p>
         <div class="btn-container">
-            <button class="btn decrease" type="button" data-action="decrease">decrease</button>
-            <button class="btn reset" type="button" data-action="reset">reset</button>
-            <button class="btn increase" type="button" data-action="increase">increase</button>
+            <button class="btn decrease" type="button" data-action="decrease">Decrease</button>
+            <button class="btn reset" type="button" data-action="reset">Reset</button>
+            <button class="btn increase" type="button" data-action="increase">Increase</button>
         </div>
     </div>
+
+    <div class="container container2">
+        <h1 class="">Counter</h1>
+        <p class="counter_number">0</p>
+        <div class="btn-container">
+            <button class="btn decrease" type="button" data-action="decrease">Decrease</button>
+            <button class="btn reset" type="button" data-action="reset">Reset</button>
+            <button class="btn increase" type="button" data-action="increase">Increase</button>
+        </div>
+    </div>
+
     <script>
-        const counter = new Counter('.container');
+        const counter = new Counter('.container1');
+        const counter2 = new Counter('.container2');
     </script>
 </body>
 </html>
